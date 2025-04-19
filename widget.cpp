@@ -9,6 +9,9 @@ Widget::Widget(QWidget *parent)
     this->setLayout(ui->verticalLayout);
 //    ui->scrollAreaWidgetContents->setLayout(ui->verticalLayout_scroll);
 
+
+    qDebug()<< QSslSocket::sslLibraryBuildVersionString();
+
     manager = new QNetworkAccessManager(this);
 
     ui->pushButton_FontUp->resize(64,64);
